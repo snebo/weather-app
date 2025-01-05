@@ -3,13 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="weather_style.css" />
+    <!-- importing the font used -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet" />
     <title>Weather World</title>
   </head>
   <body>
-    <form action="">
+    <!-- <form action="" class="searchbar">
       <label for="place">Location</label>
       <input type="text" id="place" />
       <button type="submit">Submit</button>
-    </form>
+    </form> -->
+    <div class="nav">
+      <nav>
+        <div class="name">
+          <img src="/web_assets/logo.jpg" alt="weblogo" />
+          <h1>Stefano nebo</h1>
+        </div>
+        <ul class="navlinks">
+          <li>
+            <a href="#"><img src="/web_assets/github.png" alt="git" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="/web_assets/WA.png" alt="wahtsapp" /></a>
+          </li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="siteintro">
+      <h1>Find out what the weather's like...</h1>
+    </div>
+    <div class="container">
+      <div class="info_side">
+        <!-- the searchbar and searchbox -->
+        <form action="" class="searchbar">
+          <label for="place">Location</label>
+          <input type="text" id="place" placeholder="city name" spellcheck="false" />
+          <button type="submit"><img src="/web_assets/search_icon.png" alt="" /></button>
+        </form>
+        <div class="city_info">
+          <div class="city">
+            <h3 class="city_name">Lagos,</h3>
+            <h3 class="temp">22</h3>
+            <h3 id="deg">&degc</h3>
+            <div class="details">
+              <div class="col">
+                <img src="/web_assets/humid_icon.png" alt="" />
+                <div>
+                  <p class="humidity">30%</p>
+                  <p>humidity</p>
+                </div>
+              </div>
+              <div class="col">
+                <img src="/web_assets/wind_icon.png" alt="" />
+                <div>
+                  <p class="wind">15mph</p>
+                  <p>Winds</p>
+                </div>
+                <!-- class(city_name), id(temp), class(humidity), class(wind) -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- the main weather image -->
+      <div class="weather">
+        <img class="weather_icon" src="/web_assets/cloudy.png" />
+      </div>
+    </div>
   </body>
 </html>

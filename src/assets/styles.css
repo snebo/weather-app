@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Tilt Neon", sans-serif;
+  color: white;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(25, 32, 34, 0.921);
+}
+
+.name {
+  padding: 10px;
+  display: flex;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  pointer-events: none;
+}
+
+.name img {
+  margin: 0 10px 0 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+nav {
+  display: flex;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  min-height: 8vh;
+}
+
+.navlinks {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20%;
+  margin-left: auto;
+}
+
+.navlinks li {
+  padding-right: 10%;
+  list-style: none;
+}
+
+.navlinks a {
+  text-decoration: none;
+  padding: 14px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.navlinks img {
+  width: 40px;
+  height: 40px;
+}
+
+.siteintro {
+  margin: 7% 0 60px 0;
+  font-size: 1.5rem;
+  /* text-align: center; */
+  padding-left: 5%;
+  text-transform: capitalize;
+  pointer-events: none;
+  word-spacing: 3px;
+}
+
+.container {
+  padding: 20px 15% 20px 5%;
+  /* background-color: beige; */
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchbar {
+  /* aligns searh box and icon */
+  max-width: 700px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  /* height:100px; */
+  /* background: rgba(255, 255, 255, 0.242); */
+}
+
+.searchbar input {
+  border: 4px solid #fff;
+  /*change to hover*/
+  outline: 40px;
+  background: rgba(238, 238, 227, 0.161);
+  color: rgb(207, 201, 201);
+  padding: 20px 50px;
+  border-radius: 50px;
+  height: 70px;
+  flex: 1;
+  margin-right: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.251);
+  font-weight: lighter;
+}
+
+.searchbar button {
+  border: 0;
+  background: rgba(145, 133, 133, 0);
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  cursor: pointer;
+}
+
+.weather img {
+  max-width: fit-content;
+  justify-content: center;
+}
+
+h3 {
+  display: inline-block;
+}
+.city_info {
+  margin: 10%;
+  font: weight 200px;
+  letter-spacing: 2px;
+  font-size: 2.4rem;
+  text-transform: capitalize;
+}
+
+.temp {
+  padding-left: 10px;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+#deg {
+  font-size: 4rem;
+  font-weight: lighter;
+  text-transform: lowercase;
+}
+
+.details {
+  max-width: 400px;
+  height: 120px;
+  /* background-color: rgb(92, 92, 17); */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+
+.wind,
+.humidity {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.details img {
+  width: 70px;
+  height: 60px;
+  padding-right: 15px;
+}
+
+.col {
+  display: flex;
+  margin-right: 15px;
+}

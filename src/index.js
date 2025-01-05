@@ -1,3 +1,4 @@
+import "./assets/styles.css"
 import { WEATHER_API_KEY, WEATHER_URL } from "./scripts/enviroments"
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -7,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const place = document.querySelector("#place").value
         const query_data = await fetchWeatherInfor(place)
         console.log(processWeatherInfo(query_data))
+        changeUi(query_data)
     })
 })
 async function fetchWeatherInfor(address) {
@@ -50,4 +52,11 @@ function processWeatherInfo(data) {
         days.push(day)
     }
     return { location, alearts, current_data, days }
+}
+
+function changeUi(data) {
+    if (!data) return // if there is no data
+    // update text ui
+    // use switch to select which imgage to load
+
 }
