@@ -58,5 +58,35 @@ function changeUi(data) {
     if (!data) return // if there is no data
     // update text ui
     // use switch to select which imgage to load
-
 }
+
+// example data
+// {
+//     alearts: undefined,
+//     current_data: {
+//         cloudcover: 23.1,
+//         humidity: 54.5,
+//         icon: "partly-cloudy-day",
+//         precipitation: null,
+//         pressure: 1010.6,
+//         sunshine: undefined,
+//         temperature: 33.9,
+//         windDirection: 139,
+//         windSpeed: 12.7,
+//     }
+//     days: [
+//         {
+//             date: "2025-01-05",
+//             icon: "rain",
+//             maxTemp: 31,
+//             precipitation: 0.4,
+//             solarRadiation: 258.5,
+//             temperature: 27.9,
+//             windDirection: 222.8,
+//             windSpeed: 26.6,
+//         },
+//         { date: '2025-01-06', icon: 'partly-cloudy-day', precipitation: 0.2, temperature: 28, maxTemp: 28.4, },
+//         { date: '2025-01-07', icon: 'partly-cloudy-day', precipitation: 0.2, temperature: 28, maxTemp: 28.6, },
+//     ],
+//     location: "Lagos, Nigeria"
+// }
