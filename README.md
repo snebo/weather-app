@@ -1,81 +1,104 @@
-# Project Name
+# Weather Forecast App
 
-Brief project description (1-2 sentences)
+A web-based weather forecast application that provides current weather conditions and 3-day forecasts using the Visual Crossing Weather API. Users can search for weather information by location name and view detailed weather metrics including temperature, humidity, wind speed, and cloud cover.
 
 ## Features
 
-- Key feature 1
-- Key feature 2
-- Key feature 3
+- Location-based weather search
+- Current weather conditions display
+- 3-day weather forecast
+- Dynamic weather icons based on conditions
+- Real-time data from Visual Crossing Weather API
+- Responsive design
+- Visual weather indicators with custom icons
+
+## Requirements
+
+- Modern web browser with JavaScript enabled
+- Visual Crossing Weather API key
+- Node.js and npm (for development)
 
 ## Installation
 
+1. Clone the repository:
+
 ```bash
-# Installation steps
-npm install project-name
+git clone [your-repository-url]
+cd weather-forecast-app
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Create a `.env` file in the root directory and add your API key:
+
+```
+WEATHER_API_KEY=your_api_key_here
+WEATHER_URL=https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline
 ```
 
 ## Usage
 
-```javascript
-// Basic usage example
-import { Component } from "project-name";
+1. Start the development server:
 
-const instance = new Component();
-instance.init();
+```bash
+npm start
 ```
 
-## API
+2. Open your browser and navigate to `http://localhost:3000` (or your configured port)
+3. Enter a location in the search box and submit to view weather information
 
-### Constructor
-
-```javascript
-new Component(param1, param2);
-```
-
-**Parameters:**
-
-- `param1`: Type - Description
-- `param2`: Type - Description
-
-### Methods
-
-- `methodName()`: Description
-- `methodName2()`: Description
-
-### Output
+## API Response Format
 
 ```javascript
-// Example output format
 {
-    "key": "value"
+    location: "City, Country",
+    current_data: {
+        cloudcover: number,
+        humidity: number,
+        icon: string,
+        precipitation: number,
+        pressure: number,
+        temperature: number,
+        windDirection: number,
+        windSpeed: number
+    },
+    days: [
+        {
+            date: "YYYY-MM-DD",
+            icon: string,
+            maxTemp: number,
+            precipitation: number,
+            temperature: number,
+            windDirection: number,
+            windSpeed: number
+        }
+        // ... additional days
+    ]
 }
 ```
 
-## Configuration
+## Weather Icons
 
-```javascript
-// Configuration options
-{
-    "option1": "value",
-    "option2": "value"
-}
-```
+The application uses different weather icons based on the following conditions:
 
-## CSS Classes
-
-- `.class-name`: Description
-- `.class-name2`: Description
-
-## Requirements
-
-- Requirement 1
-- Requirement 2
+- `partly-cloudy-day`: Partially cloudy conditions
+- `cloudy`: Overcast conditions
+- `rain`: Rainy conditions
+- `snow`: Snowy conditions
+- Default: Clear/sunny conditions
 
 ## Contributing
 
-Instructions for contributors
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ## License
 
-Project license information
+This project is licensed under the MIT License - see the LICENSE.md file for details.
